@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Deep Theme.ogg-d9183054b1544d6120270b5ccfef832b.oggstr"
+
+[deps]
+
+source_file="res://Music/Deep Theme.ogg"
+source_md5="a492ca280e42b3f13b9d543a4703a7b7"
+
+dest_files=[ "res://.import/Deep Theme.ogg-d9183054b1544d6120270b5ccfef832b.oggstr" ]
+dest_md5="693e853d907eae59d784c2fb9377a2cc"
+
+[params]
+
+loop=true
+loop_offset=0
