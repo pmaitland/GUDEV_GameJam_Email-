@@ -1,15 +1,18 @@
 extends KinematicBody2D
 
-const dx = 100
+const dx = 75
 var velocity = Vector2()
 
 var facingRight = true
 
-# distance to move
-const distance = 200
-var distanceTravelled = 0
-
 func _ready():
+	var random = randomize()
+	random = randi()%2
+	print(random)
+	if random == 0:
+		facingRight = true
+	else:
+		facingRight = false
 	set_physics_process(true)
 
 func _physics_process(delta):
