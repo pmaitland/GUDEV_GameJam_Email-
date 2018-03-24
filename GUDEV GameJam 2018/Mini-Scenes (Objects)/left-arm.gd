@@ -4,7 +4,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "textvar"
 
-var rotation_speed = 50
+var rotation_speed = 70
 var openRot = 70
 var closedRot = 20
 
