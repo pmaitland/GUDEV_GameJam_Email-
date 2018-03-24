@@ -8,13 +8,15 @@
 custom_solver_bias = 0.0
 radius = 50.0
 
-[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
+[node name="KinematicBody2D" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+SPEED = 8
+max_bob = 72
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -23,7 +25,7 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 759.628, 309.738 )
+position = Vector2( 759.768, 308.132 )
 scale = Vector2( 0.178206, 0.178206 )
 texture = ExtResource( 2 )
 
