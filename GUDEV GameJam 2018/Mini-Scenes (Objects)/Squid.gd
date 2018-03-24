@@ -34,10 +34,10 @@ func _physics_process(delta):
 		var squidPos = get_position()
 		
 		if facingRight:
-			squidPos.x += 200
+			squidPos.x -= 220
 		else:
-			squidPos.x -= 50
-		squidPos.y += 50
+			squidPos.x -= 360
+		squidPos.y -= 155
 		
 		ink.set_position(squidPos)
 		ink.setFacingRight(facingRight)
