@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/Boat.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mini-Scenes (Objects)/player.tscn" type="PackedScene" id=2]
@@ -6,16 +6,17 @@
 [ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Mini-Scenes (Objects)/salvage.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Mini-Scenes (Objects)/Wall.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Mini-Scenes (Objects)/Seaweed.tscn" type="PackedScene" id=7]
 
 [node name="World" type="Node2D" index="0"]
 
 [node name="Boat" parent="." index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 670.605, 102.074 )
+position = Vector2( 640, -64 )
 
 [node name="Claw" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 636.645, 635.672 )
+position = Vector2( 417.2, 87.2354 )
 
 [node name="Shark" parent="." index="2" instance=ExtResource( 3 )]
 
@@ -23,11 +24,11 @@ position = Vector2( 218.461, 379.714 )
 
 [node name="Squid" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( -325.9, 123.756 )
+position = Vector2( 256, 320 )
 
 [node name="StaticBody2D" parent="." index="4" instance=ExtResource( 5 )]
 
-position = Vector2( 720.464, 887.956 )
+position = Vector2( 768, 768 )
 
 [node name="All the walls (Left)" type="Node2D" parent="." index="5"]
 
@@ -84,5 +85,21 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 1281.45, 3771.99 )
 rotation = 3.14159
 _sections_unfolded = [ "Transform" ]
+
+[node name="Seaweed" parent="." index="7" instance=ExtResource( 7 )]
+
+position = Vector2( 47.8777, 116.62 )
+
+[node name="Seaweed3" parent="." index="8" instance=ExtResource( 7 )]
+
+position = Vector2( 1143.65, 118.889 )
+
+[node name="Seaweed4" parent="." index="9" instance=ExtResource( 7 )]
+
+position = Vector2( 1231.33, 118.943 )
+
+[node name="Seaweed2" parent="." index="10" instance=ExtResource( 7 )]
+
+position = Vector2( 135.03, 115.805 )
 
 
