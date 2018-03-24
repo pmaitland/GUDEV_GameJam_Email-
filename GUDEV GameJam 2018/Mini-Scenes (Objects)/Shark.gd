@@ -14,11 +14,9 @@ func _ready():
 
 func _physics_process(delta):
 	
-	# turn round if travelled too far
-	distanceTravelled += 1
-	if distanceTravelled > distance:
+	var collision_info = move_and_collide(velocity * delta)
+	if collision_info:
 		facingRight = !facingRight
-		distanceTravelled = 0
 	
 	# set velocity to move in correct direction
 	if facingRight:
