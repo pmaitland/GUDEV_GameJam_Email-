@@ -11,11 +11,11 @@
 
 [node name="Boat" parent="." index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 670.605, 102.074 )
+position = Vector2( 640, -64 )
 
 [node name="Claw" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 636.645, 635.672 )
+position = Vector2( 417.2, 87.2354 )
 
 [node name="Shark" parent="." index="2" instance=ExtResource( 3 )]
 
@@ -23,11 +23,11 @@ position = Vector2( 218.461, 379.714 )
 
 [node name="Squid" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( -325.9, 123.756 )
+position = Vector2( 256, 320 )
 
 [node name="StaticBody2D" parent="." index="4" instance=ExtResource( 5 )]
 
-position = Vector2( 720.464, 887.956 )
+position = Vector2( 768, 768 )
 
 [node name="All the walls (Left)" type="Node2D" parent="." index="5"]
 

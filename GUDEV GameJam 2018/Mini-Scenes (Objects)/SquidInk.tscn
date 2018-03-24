@@ -11,6 +11,7 @@ height = 40.0
 
 [node name="SquidInk" type="KinematicBody2D"]
 
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
