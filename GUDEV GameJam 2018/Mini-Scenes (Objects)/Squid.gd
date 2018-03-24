@@ -32,8 +32,6 @@ func _physics_process(delta):
 		ink = ink_scene.instance()
 		var squidPos = get_position()
 		
-		print(squidPos)
-		
 		if facingRight:
 			squidPos.x += 70
 		squidPos.y += 30
