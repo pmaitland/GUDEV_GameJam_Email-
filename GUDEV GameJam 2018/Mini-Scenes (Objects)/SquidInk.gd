@@ -17,3 +17,5 @@ func _physics_process(delta):
 
 func setFacingRight(d):
 	facingRight = d
+	if !facingRight:
+		$Sprite.flip_h = true

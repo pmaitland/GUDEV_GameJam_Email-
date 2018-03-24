@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/Squid.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Squid.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 5.0
 height = 10.0
 
-[node name="Squid" type="KinematicBody2D"]
+[node name="Squid" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -19,15 +19,15 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-position = Vector2( 645.607, 366.322 )
-scale = Vector2( 1.47161, 1.1533 )
+position = Vector2( 680.024, 366.969 )
+scale = Vector2( 0.13999, 0.0965774 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 644.31, 367.025 )
+position = Vector2( 678.797, 355.571 )
 rotation = 1.5708
-scale = Vector2( 6.67026, 4.38479 )
+scale = Vector2( 7.06962, 8.98968 )
 shape = SubResource( 1 )
 
 
