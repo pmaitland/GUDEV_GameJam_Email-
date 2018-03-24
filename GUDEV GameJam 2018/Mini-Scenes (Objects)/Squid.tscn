@@ -11,6 +11,7 @@ height = 10.0
 
 [node name="Squid" type="KinematicBody2D"]
 
+position = Vector2( 352.693, 239.913 )
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
@@ -21,13 +22,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-position = Vector2( 118.093, 67.9554 )
+position = Vector2( 6.12305, 12.4143 )
 scale = Vector2( 0.13999, 0.0965774 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 116.866, 56.5574 )
+position = Vector2( 3.92133, 0.350983 )
 rotation = 1.5708
 scale = Vector2( 7.06962, 8.98968 )
 shape = SubResource( 1 )
