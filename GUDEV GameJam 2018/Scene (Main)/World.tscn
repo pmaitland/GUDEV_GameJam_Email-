@@ -2,14 +2,40 @@
 
 [ext_resource path="res://Music/Main Theme.ogg" type="AudioStream" id=1]
 
-[node name="World" type="Node2D" index="0"]
+[node name="World" type="Node2D"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="0"]
 
+<<<<<<< HEAD
+position = Vector2( -1.44653, 264.353 )
+
+[node name="Wall2" parent="." index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 1359.55, 1049.51 )
+rotation = 3.14159
+_sections_unfolded = [ "Transform" ]
+
+[node name="Claw" parent="." index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 636.645, 635.672 )
+
+[node name="Shark" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 218.461, 379.714 )
+
+[node name="Squid" parent="." index="4" instance=ExtResource( 4 )]
+
+position = Vector2( -325.9, 123.756 )
+
+[node name="StaticBody2D" parent="." index="5" instance=ExtResource( 5 )]
+
+position = Vector2( 720.464, 887.956 )
+=======
 stream = ExtResource( 1 )
 volume_db = 0.05
 autoplay = true
 mix_target = 0
 bus = "Master"
+>>>>>>> 3dfc8d56a4cc76460a22969def8f3fab10671e22
 
 

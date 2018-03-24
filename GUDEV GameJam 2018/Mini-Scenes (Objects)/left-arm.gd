@@ -25,4 +25,4 @@ func _process(delta):
 			rot = openRot
 	
 	self.rotation_degrees = rot
-		
+
