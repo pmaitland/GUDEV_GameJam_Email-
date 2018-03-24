@@ -16,6 +16,7 @@ func _ready():
 		facingRight = true
 	else:
 		facingRight = false
+		$Sprite.flip_h = true
 	set_physics_process(true)
 
 func _physics_process(delta):
@@ -33,8 +34,10 @@ func _physics_process(delta):
 		var squidPos = get_position()
 		
 		if facingRight:
-			squidPos.x += 70
-		squidPos.y += 30
+			squidPos.x += 200
+		else:
+			squidPos.x -= 50
+		squidPos.y += 50
 		
 		ink.set_position(squidPos)
 		ink.setFacingRight(facingRight)
