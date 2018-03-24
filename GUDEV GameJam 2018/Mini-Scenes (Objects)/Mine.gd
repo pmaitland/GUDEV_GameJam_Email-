@@ -1,15 +1,27 @@
 extends KinematicBody2D
 
-# class member variables go here, for example:
-var 
-# var b = "textvar"
+export var SPEED = 8
+export var max_bob = 72
+
+onready var start_pos = get_position()
+onready var bobcount = 0
+var velocity = Vector2()
+
+var movingUp = true
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+	set_physics_process(true)
+	
+func _physics_process(delta):
+	
+	bobcount += 1
+	if bobcount > max_bob:
+		bobcount = 0
+		movingUp = !movingUp
+		
+	if movingUp:
+		velocity.y = -SPEED
+	else:
+		velocity.y = SPEED
+	set_position(get_position() + velocity.normalized() * SPEED * delta)
+	
