@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Background2.png-bb8da38140844d1836bc65136e1f9e0e.stex"
+path="res://.import/IronCrate.png-f4b4b06144e85b1114c35e8a440c0484.stex"
 
 [deps]
 
-source_file="res://Textures/Background/Background2.png"
-source_md5="c3c86689ac3ddf66c52b1922b7a040e3"
+source_file="res://Textures/IronCrate.png"
+source_md5="92bb602d41430fdb0ec259f7ce93654e"
 
-dest_files=[ "res://.import/Background2.png-bb8da38140844d1836bc65136e1f9e0e.stex" ]
-dest_md5="320afb019a117f176f79fb2470b023c2"
+dest_files=[ "res://.import/IronCrate.png-f4b4b06144e85b1114c35e8a440c0484.stex" ]
+dest_md5="625c810a97475a47fe318743e4caa383"
 
 [params]
 

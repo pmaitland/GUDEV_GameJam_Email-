@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Background2.png-bb8da38140844d1836bc65136e1f9e0e.stex"
+path="res://.import/Barrel.png-099a5a2279a9bb263442b22ed3aaf9ef.stex"
 
 [deps]
 
-source_file="res://Textures/Background/Background2.png"
-source_md5="c3c86689ac3ddf66c52b1922b7a040e3"
+source_file="res://Textures/Barrel.png"
+source_md5="57c1edd6ad8bb009c79d161f994e058b"
 
-dest_files=[ "res://.import/Background2.png-bb8da38140844d1836bc65136e1f9e0e.stex" ]
-dest_md5="320afb019a117f176f79fb2470b023c2"
+dest_files=[ "res://.import/Barrel.png-099a5a2279a9bb263442b22ed3aaf9ef.stex" ]
+dest_md5="03edbfb75b5830d2a6fcafc9b9d78ca6"
 
 [params]
 

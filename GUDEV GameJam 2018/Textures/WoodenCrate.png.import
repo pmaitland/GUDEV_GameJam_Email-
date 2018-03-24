@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Background2.png-bb8da38140844d1836bc65136e1f9e0e.stex"
+path="res://.import/WoodenCrate.png-72be65a18f8f983c3ce0e26d8a53d93a.stex"
 
 [deps]
 
-source_file="res://Textures/Background/Background2.png"
-source_md5="c3c86689ac3ddf66c52b1922b7a040e3"
+source_file="res://Textures/WoodenCrate.png"
+source_md5="02e52e63db9171cdb612d79daccb32f2"
 
-dest_files=[ "res://.import/Background2.png-bb8da38140844d1836bc65136e1f9e0e.stex" ]
-dest_md5="320afb019a117f176f79fb2470b023c2"
+dest_files=[ "res://.import/WoodenCrate.png-72be65a18f8f983c3ce0e26d8a53d93a.stex" ]
+dest_md5="cf116a0cfa9b2b15e39cfe805b50f7e7"
 
 [params]
 
