@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends RigidBody2D
 
 # class member variables go here, for example:
 # var a = 2
@@ -8,7 +8,7 @@ func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
 	var value = 0
+	set_physics_process(true)
 
-#func _process(delta):
-	# Called every frame. Delta is time since last frame.
-	# Update game logic here.
+func _physics_process(delta):
+	pass

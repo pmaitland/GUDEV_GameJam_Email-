@@ -20,7 +20,7 @@ func _process(delta):
 		if rot < closedRot:
 			rot = closedRot
 	else:
-		rot += delta * rotation_speed
+		rot += delta *  2 *rotation_speed
 		if rot > openRot:
 			rot = openRot
 	
