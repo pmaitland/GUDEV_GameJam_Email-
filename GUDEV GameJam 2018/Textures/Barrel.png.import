@@ -7,10 +7,17 @@ path="res://.import/Barrel.png-099a5a2279a9bb263442b22ed3aaf9ef.stex"
 [deps]
 
 source_file="res://Textures/Barrel.png"
+<<<<<<< HEAD
 source_md5="4a5fb40287fb67e5ca06dab9c844a6d8"
 
 dest_files=[ "res://.import/Barrel.png-099a5a2279a9bb263442b22ed3aaf9ef.stex" ]
 dest_md5="5d612322fc2d57341274cda5258cf9a5"
+=======
+source_md5="57c1edd6ad8bb009c79d161f994e058b"
+
+dest_files=[ "res://.import/Barrel.png-099a5a2279a9bb263442b22ed3aaf9ef.stex" ]
+dest_md5="03edbfb75b5830d2a6fcafc9b9d78ca6"
+>>>>>>> 004b26f5e65dcecb5be0aa633f891afdcc378417
 
 [params]
 

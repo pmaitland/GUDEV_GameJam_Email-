@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Textures/Background.tres" type="TileSet" id=1]
-[ext_resource path="res://Mini-Scenes (Objects)/Boat.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Mini-Scenes (Objects)/player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Mini-Scenes (Objects)/Shark.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Mini-Scenes (Objects)/salvage.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Mini-Scenes (Objects)/Wall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Mini-Scenes (Objects)/Sky.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Mini-Scenes (Objects)/Boat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Mini-Scenes (Objects)/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Mini-Scenes (Objects)/Shark.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Mini-Scenes (Objects)/salvage.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Mini-Scenes (Objects)/Wall.tscn" type="PackedScene" id=8]
 
 [node name="World" type="Node2D" index="0"]
 
@@ -28,79 +29,84 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 0, 0, 0, 10, 1, 0, 327680, 1, 0, 327690, 0, 0, 655360, 0, 0, 655370, 1, 0, 983040, 1, 0, 983050, 0, 0, 1310720, 0, 0, 1310730, 1, 0, 1638400, 1, 0, 1638410, 0, 0, 1966080, 0, 0, 1966090, 1, 0, 2293760, 1, 0, 2293770, 0, 0, 2621440, 0, 0, 2621450, 1, 0, 2949120, 1, 0, 2949130, 0, 0, 3276800, 0, 0, 3276810, 1, 0, 3604480, 1, 0, 3604490, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 9, 0, 0, 10, 0, 0, 327680, 2, 0, 327690, 2, 0, 655360, 2, 0, 655370, 2, 0, 983040, 2, 0, 983050, 2, 0, 1310720, 2, 0, 1310730, 2, 0, 1638400, 2, 0, 1638410, 2, 0, 1900549, 536870913, 0, 1900554, 1, 0, 2228224, 3, 0, 2228225, 3, 0, 2228234, 3, 0, 2555904, 3, 0, 2555914, 3, 0, 2818048, 3, 0, 2818058, 3, 0, 2883584, 3, 0, 2883594, 3, 0, 2949120, 3, 0, 2949130, 3, 0, 3014656, 3, 0, 3014666, 3, 0, 3080192, 3, 0, 3080202, 3, 0, 3145728, 3, 0, 3145738, 3, 0, 3211264, 3, 0, 3211274, 3, 0, 3276800, 3, 0, 3276810, 3, 0, 3342337, 3, 0, 3342346, 3, 0, 3407873, 3, 0, 3407882, 3, 0, 3473408, 3, 0, 3473409, 3, 0, 3473418, 3, 0 )
 
-[node name="Boat" parent="." index="1" instance=ExtResource( 2 )]
+[node name="Sky" parent="." index="1" instance=ExtResource( 2 )]
+
+[node name="Boat" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 640, -64 )
 
-[node name="Claw" parent="." index="2" instance=ExtResource( 3 )]
+[node name="Claw" parent="." index="3" instance=ExtResource( 4 )]
 
 position = Vector2( 417.2, 87.2354 )
 
-[node name="Shark" parent="." index="3" instance=ExtResource( 4 )]
+[node name="Shark" parent="." index="4" instance=ExtResource( 5 )]
 
 position = Vector2( 218.461, 379.714 )
 
-[node name="Squid" parent="." index="4" instance=ExtResource( 5 )]
+[node name="Squid" parent="." index="5" instance=ExtResource( 6 )]
 
 position = Vector2( 256, 320 )
 
-[node name="StaticBody2D" parent="." index="5" instance=ExtResource( 6 )]
+[node name="StaticBody2D" parent="." index="6" instance=ExtResource( 7 )]
 
 position = Vector2( 768, 768 )
 
-[node name="All the walls (Left)" type="Node2D" parent="." index="6"]
+[node name="All the walls (Left)" type="Node2D" parent="." index="7"]
 
-[node name="Wall" parent="All the walls (Left)" index="0" instance=ExtResource( 7 )]
+editor/display_folded = true
+
+[node name="Wall" parent="All the walls (Left)" index="0" instance=ExtResource( 8 )]
 
 position = Vector2( 0, 192 )
 
-[node name="Wall2" parent="All the walls (Left)" index="1" instance=ExtResource( 7 )]
+[node name="Wall2" parent="All the walls (Left)" index="1" instance=ExtResource( 8 )]
 
 position = Vector2( 0, 896 )
 
-[node name="Wall3" parent="All the walls (Left)" index="2" instance=ExtResource( 7 )]
+[node name="Wall3" parent="All the walls (Left)" index="2" instance=ExtResource( 8 )]
 
 position = Vector2( 0, 1600 )
 
-[node name="Wall4" parent="All the walls (Left)" index="3" instance=ExtResource( 7 )]
+[node name="Wall4" parent="All the walls (Left)" index="3" instance=ExtResource( 8 )]
 
 position = Vector2( 0, 2304 )
 
-[node name="Wall5" parent="All the walls (Left)" index="4" instance=ExtResource( 7 )]
+[node name="Wall5" parent="All the walls (Left)" index="4" instance=ExtResource( 8 )]
 
 position = Vector2( 0, 3008 )
 
-[node name="All the Walls (Right)" type="Node2D" parent="." index="7"]
+[node name="All the Walls (Right)" type="Node2D" parent="." index="8"]
 
+editor/display_folded = true
 _sections_unfolded = [ "Transform" ]
 
-[node name="Wall" parent="All the Walls (Right)" index="0" instance=ExtResource( 7 )]
+[node name="Wall" parent="All the Walls (Right)" index="0" instance=ExtResource( 8 )]
 
 position = Vector2( 1282.19, 915.531 )
 rotation = 3.14159
 _sections_unfolded = [ "Transform" ]
 
-[node name="Wall2" parent="All the Walls (Right)" index="1" instance=ExtResource( 7 )]
+[node name="Wall2" parent="All the Walls (Right)" index="1" instance=ExtResource( 8 )]
 
 position = Vector2( 1281.59, 1627 )
 rotation = 3.14159
 _sections_unfolded = [ "Transform" ]
 
-[node name="Wall3" parent="All the Walls (Right)" index="2" instance=ExtResource( 7 )]
+[node name="Wall3" parent="All the Walls (Right)" index="2" instance=ExtResource( 8 )]
 
 position = Vector2( 1280.99, 2342.43 )
 rotation = 3.14159
 _sections_unfolded = [ "Transform" ]
 
-[node name="Wall4" parent="All the Walls (Right)" index="3" instance=ExtResource( 7 )]
+[node name="Wall4" parent="All the Walls (Right)" index="3" instance=ExtResource( 8 )]
 
 position = Vector2( 1281.4, 3055.6 )
 rotation = 3.14159
 _sections_unfolded = [ "Transform" ]
 
-[node name="Wall5" parent="All the Walls (Right)" index="4" instance=ExtResource( 7 )]
+[node name="Wall5" parent="All the Walls (Right)" index="4" instance=ExtResource( 8 )]
 
 position = Vector2( 1281.45, 3771.99 )
 rotation = 3.14159
