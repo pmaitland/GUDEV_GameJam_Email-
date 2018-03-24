@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 20.0
 height = 40.0
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="SquidInk" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
