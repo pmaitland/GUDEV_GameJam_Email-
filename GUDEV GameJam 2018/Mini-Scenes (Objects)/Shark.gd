@@ -10,6 +10,7 @@ func _ready():
 	random = randi()%2
 	if random == 0:
 		facingRight = true
+		$Sprite.flip_h = true
 	else:
 		facingRight = false
 	set_physics_process(true)
@@ -19,6 +20,7 @@ func _physics_process(delta):
 	var collision_info = move_and_collide(velocity * delta)
 	if collision_info:
 		facingRight = !facingRight
+		$Sprite.flip_h = !$Sprite.flip_h
 	
 	# set velocity to move in correct direction
 	if facingRight:
