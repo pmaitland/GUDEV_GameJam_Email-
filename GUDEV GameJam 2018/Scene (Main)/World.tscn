@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/Boat.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mini-Scenes (Objects)/player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Mini-Scenes (Objects)/salvage.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Mini-Scenes (Objects)/Wall.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Mini-Scenes (Objects)/Seaweed.tscn" type="PackedScene" id=7]
 
 [node name="World" type="Node2D" index="0"]
 
@@ -84,5 +85,21 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 1281.45, 3771.99 )
 rotation = 3.14159
 _sections_unfolded = [ "Transform" ]
+
+[node name="Seaweed" parent="." index="7" instance=ExtResource( 7 )]
+
+position = Vector2( 47.8777, 116.62 )
+
+[node name="Seaweed3" parent="." index="8" instance=ExtResource( 7 )]
+
+position = Vector2( 1143.65, 118.889 )
+
+[node name="Seaweed4" parent="." index="9" instance=ExtResource( 7 )]
+
+position = Vector2( 1231.33, 118.943 )
+
+[node name="Seaweed2" parent="." index="10" instance=ExtResource( 7 )]
+
+position = Vector2( 135.03, 115.805 )
 
 
