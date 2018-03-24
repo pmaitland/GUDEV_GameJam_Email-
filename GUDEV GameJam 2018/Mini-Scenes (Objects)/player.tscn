@@ -5,7 +5,7 @@
 [ext_resource path="res://Mini-Scenes (Objects)/right-arm.gd" type="Script" id=3]
 [ext_resource path="res://Mini-Scenes (Objects)/left-arm.gd" type="Script" id=4]
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 30, 40 )
@@ -25,7 +25,7 @@ extents = Vector2( 5, 20 )
 custom_solver_bias = 0.0
 extents = Vector2( 5, 15 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 9.38335 )
@@ -75,7 +75,7 @@ _sections_unfolded = [ "Limit" ]
 
 position = Vector2( 0, -11.2263 )
 scale = Vector2( 1, 0.287654 )
-shape = SubResource( 5 )
+shape = SubResource( 1 )
 
 [node name="right-arm" type="KinematicBody2D" parent="." index="3"]
 
@@ -226,6 +226,6 @@ collision/safe_margin = 0.08
 
 position = Vector2( 0.361853, 4.15274 )
 scale = Vector2( 2.70989, 0.0868178 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 
