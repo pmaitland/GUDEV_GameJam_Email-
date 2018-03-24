@@ -7,7 +7,7 @@ extends KinematicBody2D
 var velocity = Vector2()
 
 var maxSpeed = Vector2(3, 100)
-var accel = Vector2(0, 10)
+var accel = Vector2(0, 20)
 
 func _ready():
 	# Called every time the node is added to the scene.
@@ -24,8 +24,8 @@ func _physics_process(delta):
 			velocity.y = maxSpeed.y
 	else:
 		velocity.y -= accel.y
-		if velocity.y < -maxSpeed.y * 1.8:
-			velocity.y = -maxSpeed.y * 1.8
+		if velocity.y < -maxSpeed.y * 1.2:
+			velocity.y = -maxSpeed.y * 1.2
 	
 	velocity.x = get_viewport().get_mouse_position().x - self.position.x
 	move_and_collide(velocity * delta)
