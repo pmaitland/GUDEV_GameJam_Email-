@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -9,14 +9,29 @@ custom_solver_bias = 0.0
 radius = 30.0
 height = 50.0
 
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5, 25 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5, 20 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5, 15 )
+
 [node name="Claw" type="KinematicBody2D" index="0"]
 
-position = Vector2( 128, 128 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
@@ -52,5 +67,51 @@ _sections_unfolded = [ "Limit" ]
 
 scale = Vector2( 1, 0.5 )
 shape = SubResource( 1 )
+
+[node name="right-arm" type="KinematicBody2D" parent="." index="3"]
+
+position = Vector2( 25, 10 )
+rotation = -1.15541
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+
+[node name="top-arm" type="CollisionShape2D" parent="right-arm" index="0"]
+
+position = Vector2( 0, 30 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="right-arm" index="1"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="bottom-arm" type="CollisionShape2D" parent="right-arm/KinematicBody2D" index="0"]
+
+position = Vector2( -13, 65 )
+rotation = 0.785398
+scale = Vector2( 1, 1 )
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="right-arm/KinematicBody2D" index="1"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right-arm/KinematicBody2D/KinematicBody2D" index="0"]
+
+position = Vector2( -35, 80 )
+rotation = 1.22173
+scale = Vector2( 1, 1 )
+shape = SubResource( 4 )
+_sections_unfolded = [ "Transform" ]
 
 
