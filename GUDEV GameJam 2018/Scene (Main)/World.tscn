@@ -88,18 +88,18 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Seaweed" parent="." index="7" instance=ExtResource( 7 )]
 
-position = Vector2( 47.8777, 116.62 )
+position = Vector2( 47.8777, 117.62 )
 
 [node name="Seaweed3" parent="." index="8" instance=ExtResource( 7 )]
 
-position = Vector2( 1143.65, 118.889 )
+position = Vector2( 1147.65, 118.889 )
 
 [node name="Seaweed4" parent="." index="9" instance=ExtResource( 7 )]
 
-position = Vector2( 1231.33, 118.943 )
+position = Vector2( 1237.33, 118.943 )
 
 [node name="Seaweed2" parent="." index="10" instance=ExtResource( 7 )]
 
-position = Vector2( 135.03, 115.805 )
+position = Vector2( 139.03, 117.805 )
 
 
