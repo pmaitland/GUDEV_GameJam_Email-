@@ -7,7 +7,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 20, 508.836 )
 
-[node name="Wall" type="StaticBody2D" index="0"]
+[node name="Wall" type="StaticBody2D"]
 
 position = Vector2( 4.10107, 0 )
 input_pickable = false
