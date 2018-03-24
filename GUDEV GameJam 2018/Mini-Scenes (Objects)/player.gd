@@ -28,6 +28,5 @@ func _physics_process(delta):
 			velocity.y = -maxSpeed.y * 1.8
 	
 	velocity.x = get_viewport().get_mouse_position().x - self.position.x
-	
 	move_and_collide(velocity * delta)
 	

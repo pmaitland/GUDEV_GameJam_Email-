@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Mini-Scenes (Objects)/right-arm.gd" type="Script" id=3]
+[ext_resource path="res://Mini-Scenes (Objects)/left-arm.gd" type="Script" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -24,7 +26,7 @@ extents = Vector2( 5, 20 )
 custom_solver_bias = 0.0
 extents = Vector2( 5, 15 )
 
-[node name="Claw" type="KinematicBody2D" index="0"]
+[node name="Claw" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -35,6 +37,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
+position = Vector2( 0, -7.52792 )
+scale = Vector2( 1, 0.764753 )
 texture = ExtResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="." index="1"]
@@ -65,7 +69,8 @@ _sections_unfolded = [ "Limit" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
 
-scale = Vector2( 1, 0.5 )
+position = Vector2( 0, -8.10243 )
+scale = Vector2( 1, 0.360303 )
 shape = SubResource( 1 )
 
 [node name="right-arm" type="KinematicBody2D" parent="." index="3"]
@@ -76,42 +81,134 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="top-arm" type="CollisionShape2D" parent="right-arm" index="0"]
 
-position = Vector2( 0, 30 )
+position = Vector2( 0, 33.9356 )
+scale = Vector2( 1, 0.859442 )
 shape = SubResource( 2 )
 _sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="right-arm" index="1"]
+[node name="Sprite" type="Sprite" parent="right-arm" index="1"]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
+position = Vector2( -0.341689, 29.7236 )
+rotation = -2.98023e-08
+scale = Vector2( 0.159109, 0.772467 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="bottom-arm" type="CollisionShape2D" parent="right-arm/KinematicBody2D" index="0"]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="right-arm" index="2"]
 
 position = Vector2( -13, 65 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
-shape = SubResource( 3 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="right-arm/KinematicBody2D" index="1"]
-
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+
+[node name="bottom-arm" type="CollisionShape2D" parent="right-arm/KinematicBody2D" index="0"]
+
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="right-arm/KinematicBody2D" index="1"]
+
+position = Vector2( 0.154757, -0.0602103 )
+rotation = -2.98023e-08
+scale = Vector2( 0.135257, 0.609985 )
+texture = ExtResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="right-arm/KinematicBody2D" index="2"]
+
+position = Vector2( -5, 30 )
+rotation = 0.610865
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="right-arm/KinematicBody2D/KinematicBody2D" index="0"]
 
-position = Vector2( -35, 80 )
-rotation = 1.22173
-scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="right-arm/KinematicBody2D/KinematicBody2D" index="1"]
+
+position = Vector2( -0.0467129, -0.585935 )
+scale = Vector2( 0.136806, 0.47279 )
+texture = ExtResource( 2 )
+
+[node name="left-arm" type="KinematicBody2D" parent="." index="4"]
+
+position = Vector2( -25, 10 )
+rotation = 1.15541
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="top-arm" type="CollisionShape2D" parent="left-arm" index="0"]
+
+position = Vector2( 0, 33.1633 )
+scale = Vector2( 1, 0.887025 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="left-arm" index="1"]
+
+position = Vector2( -0.341689, 29.7236 )
+rotation = -2.98023e-08
+scale = Vector2( 0.159109, 0.772467 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="left-arm" index="2"]
+
+position = Vector2( 13, 65 )
+rotation = -0.785398
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+
+[node name="bottom-arm" type="CollisionShape2D" parent="left-arm/KinematicBody2D" index="0"]
+
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="left-arm/KinematicBody2D" index="1"]
+
+position = Vector2( 0.154757, -0.0602103 )
+rotation = -2.98023e-08
+scale = Vector2( 0.135257, 0.609985 )
+texture = ExtResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="left-arm/KinematicBody2D" index="2"]
+
+position = Vector2( 5, 30 )
+rotation = -0.610865
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left-arm/KinematicBody2D/KinematicBody2D" index="0"]
+
+shape = SubResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="left-arm/KinematicBody2D/KinematicBody2D" index="1"]
+
+position = Vector2( -0.0467129, -0.585935 )
+scale = Vector2( 0.136806, 0.47279 )
+texture = ExtResource( 2 )
 
 
