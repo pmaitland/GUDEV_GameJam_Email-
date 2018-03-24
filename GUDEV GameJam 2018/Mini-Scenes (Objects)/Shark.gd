@@ -8,7 +8,6 @@ var facingRight = true
 func _ready():
 	var random = randomize()
 	random = randi()%2
-	print(random)
 	if random == 0:
 		facingRight = true
 	else:
