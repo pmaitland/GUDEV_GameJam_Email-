@@ -10,6 +10,7 @@ var closedRot = 20
 
 func _ready():
 	set_process(true)
+	set_physics_process(true)
 
 func _process(delta):
 #	# Called every frame. Delta is time since last frame.
@@ -25,4 +26,6 @@ func _process(delta):
 			rot = openRot
 	
 	self.rotation_degrees = rot
-		
+
+func _physics_process(delta):
+	move_and_collide(Vector2(0, 0))
