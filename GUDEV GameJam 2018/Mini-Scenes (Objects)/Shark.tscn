@@ -19,7 +19,7 @@ script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
-position = Vector2( 842.851, 350.503 )
+position = Vector2( 842.851, 347.985 )
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Z Index" ]
