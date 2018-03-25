@@ -8,9 +8,9 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="StaticBody2D" type="RigidBody2D" index="0"]
+[node name="Salvage10" type="RigidBody2D" index="0"]
 
-position = Vector2( 5.8619, 37.4467 )
+position = Vector2( -0.688309, 31.3237 )
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
@@ -32,6 +32,9 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -41,7 +44,7 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 53.5484, 50.751 )
+position = Vector2( 53.2636, 50.751 )
 scale = Vector2( 0.0980476, 0.091845 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
