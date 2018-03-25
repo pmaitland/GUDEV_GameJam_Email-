@@ -9,6 +9,8 @@ var velocity = Vector2()
 var maxSpeed = Vector2(3, 100)
 var accel = Vector2(0, 20)
 
+var controlsInverted = false
+
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
@@ -17,6 +19,9 @@ func _ready():
 func _physics_process(delta):
 	# Called every frame. Delta is time since last frame.
 	# Update game logic here.
+	
+	
+	
 	
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		velocity.y += accel.y
@@ -27,6 +32,13 @@ func _physics_process(delta):
 		if velocity.y < -maxSpeed.y * 1.2:
 			velocity.y = -maxSpeed.y * 1.2
 	
-	velocity.x = get_viewport().get_mouse_position().x - self.position.x
+	if !controlsInverted:
+		velocity.x = get_viewport().get_mouse_position().x - self.position.x
+	else:
+		velocity.x = self.position.x - get_viewport().get_mouse_position().x
+		
 	move_and_collide(velocity * delta)
+	
+func _on_Area2D_body_enter(body):
+    print(str('Body entered: ', body.get_name()))
 	

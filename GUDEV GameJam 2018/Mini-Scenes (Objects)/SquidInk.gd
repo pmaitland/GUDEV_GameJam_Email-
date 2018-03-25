@@ -14,6 +14,9 @@ func _physics_process(delta):
 	else:
 		velocity.x = -dx
 	move_and_collide(velocity * delta)
+	
+func _on_Area2D_body_enter(body):
+    print(str('Body entered: ', body.get_name()))
 
 func setFacingRight(d):
 	facingRight = d
