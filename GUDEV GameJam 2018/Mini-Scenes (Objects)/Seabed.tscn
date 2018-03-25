@@ -5,9 +5,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 493.274, 100 )
+extents = Vector2( 500, 80 )
 
-[node name="Seabed" type="StaticBody2D"]
+[node name="Seabed" type="StaticBody2D" index="0"]
 
 position = Vector2( 936.523, 634.419 )
 input_pickable = false
@@ -23,8 +23,8 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
-position = Vector2( -173.951, -20.1403 )
-scale = Vector2( 1.0401, 1 )
+position = Vector2( -173.951, -17.5782 )
+scale = Vector2( 1.0401, 1.20917 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
