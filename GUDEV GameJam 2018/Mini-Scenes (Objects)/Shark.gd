@@ -36,7 +36,7 @@ func _physics_process(delta):
 			print("hit claw")
 			pass
 		facingRight = !facingRight
-		$Sprite.flip_h = !$Sprite.flip_h
+		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 	
 	# set velocity to move in correct direction
 	if facingRight:
