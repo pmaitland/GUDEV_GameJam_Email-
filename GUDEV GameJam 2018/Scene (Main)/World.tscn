@@ -124,17 +124,25 @@ position = Vector2( 640, -64 )
 
 position = Vector2( 417.2, 87.2354 )
 
-[node name="Shark" parent="." index="7" instance=ExtResource( 7 )]
+[node name="All the sharks" type="Node2D" parent="." index="7"]
+
+editor/display_folded = true
+
+[node name="Shark" parent="All the sharks" index="0" instance=ExtResource( 7 )]
 
 position = Vector2( 218.461, 379.714 )
 
-[node name="Squid" parent="." index="8" instance=ExtResource( 8 )]
+[node name="All the squid (left)" type="Node2D" parent="." index="8"]
+
+[node name="All the sqid (right)" type="Node2D" parent="." index="9"]
+
+[node name="Squid" parent="." index="10" instance=ExtResource( 8 )]
 
 position = Vector2( 256, 320 )
 
-[node name="All Salvage 10" type="Node2D" parent="." index="9"]
+[node name="All Salvage 10" type="Node2D" parent="." index="11"]
 
-[node name="All the weed" type="Node2D" parent="." index="10"]
+[node name="All the weed" type="Node2D" parent="." index="12"]
 
 editor/display_folded = true
 
@@ -154,7 +162,7 @@ position = Vector2( 127.059, 114.643 )
 
 position = Vector2( 1247.06, 114.643 )
 
-[node name="ANimated overlay" type="AnimatedSprite" parent="." index="11"]
+[node name="ANimated overlay" type="AnimatedSprite" parent="." index="13"]
 
 position = Vector2( 640.956, 208.778 )
 scale = Vector2( 1.0028, 0.724752 )
@@ -162,12 +170,12 @@ frames = SubResource( 1 )
 animation = "Sea"
 playing = true
 
-[node name="OVerlay" type="Sprite" parent="." index="12"]
+[node name="OVerlay" type="Sprite" parent="." index="14"]
 
 position = Vector2( 642.88, 2230.82 )
 scale = Vector2( 1.00724, 4.89212 )
 texture = ExtResource( 12 )
 
-[node name="Score" parent="." index="13" instance=ExtResource( 13 )]
+[node name="Score" parent="." index="15" instance=ExtResource( 13 )]
 
 
