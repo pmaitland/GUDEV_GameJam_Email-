@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/Sky.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/Background.tres" type="TileSet" id=2]
@@ -6,11 +6,12 @@
 [ext_resource path="res://Mini-Scenes (Objects)/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Mini-Scenes (Objects)/Shark.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Mini-Scenes (Objects)/salvage.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Mini-Scenes (Objects)/Seaweed.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Mini-Scenes (Objects)/Wall.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Textures/Overlay2.png" type="Texture" id=9]
 [ext_resource path="res://Textures/Overlay3.png" type="Texture" id=10]
 [ext_resource path="res://Textures/Overlay1.png" type="Texture" id=11]
+[ext_resource path="res://Mini-Scenes (Objects)/HUD/Score.tscn" type="PackedScene" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -30,6 +31,7 @@ position = Vector2( 0, 13.566 )
 
 [node name="Background" type="TileMap" parent="." index="1"]
 
+position = Vector2( 0, 20 )
 mode = 0
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 64, 64 )
@@ -64,11 +66,13 @@ position = Vector2( 218.461, 379.714 )
 
 position = Vector2( 256, 320 )
 
-[node name="StaticBody2D" parent="." index="6" instance=ExtResource( 7 )]
+[node name="All the weed" type="Node2D" parent="." index="6"]
 
-position = Vector2( 768, 768 )
+[node name="Seaweed" parent="All the weed" index="0" instance=ExtResource( 7 )]
 
-[node name="All the walls (Left)" type="Node2D" parent="." index="7"]
+[node name="All Salvage 10" type="Node2D" parent="." index="7"]
+
+[node name="All the walls (Left)" type="Node2D" parent="." index="8"]
 
 editor/display_folded = true
 
@@ -92,55 +96,56 @@ position = Vector2( -9.8219, 2301.54 )
 
 position = Vector2( -9.8219, 3005.54 )
 
-[node name="All the Walls (Right)" type="Node2D" parent="." index="8"]
+[node name="All the Walls (Right)" type="Node2D" parent="." index="9"]
 
 editor/display_folded = true
-position = Vector2( 8.28686, 3.82525 )
+position = Vector2( 9.36758, 32.4643 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Wall" parent="All the Walls (Right)" index="0" instance=ExtResource( 8 )]
 
-position = Vector2( 1279.75, 910.67 )
+position = Vector2( 1280.86, 879.371 )
 rotation = 3.14159
 _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall2" parent="All the Walls (Right)" index="1" instance=ExtResource( 8 )]
 
-position = Vector2( 1279.15, 1622.14 )
+position = Vector2( 1280.26, 1590.84 )
 rotation = 3.14159
 _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall3" parent="All the Walls (Right)" index="2" instance=ExtResource( 8 )]
 
-position = Vector2( 1278.55, 2337.57 )
+position = Vector2( 1279.66, 2306.27 )
 rotation = 3.14159
 _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall4" parent="All the Walls (Right)" index="3" instance=ExtResource( 8 )]
 
-position = Vector2( 1278.96, 3050.74 )
+position = Vector2( 1280.07, 3019.44 )
 rotation = 3.14159
 _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall5" parent="All the Walls (Right)" index="4" instance=ExtResource( 8 )]
 
-position = Vector2( 1279.01, 3767.13 )
+position = Vector2( 1280.12, 3735.83 )
 rotation = 3.14159
 _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="9"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="10"]
 
 position = Vector2( 640.956, 208.778 )
 scale = Vector2( 1.0028, 0.724752 )
 frames = SubResource( 1 )
 animation = "Sea"
-frame = 1
 playing = true
 
-[node name="Sprite" type="Sprite" parent="." index="10"]
+[node name="Sprite" type="Sprite" parent="." index="11"]
 
 position = Vector2( 642.88, 2205.87 )
 scale = Vector2( 1.00724, 4.8228 )
 texture = ExtResource( 11 )
+
+[node name="Score" parent="." index="12" instance=ExtResource( 12 )]
 
 
