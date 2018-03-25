@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Mini-Scenes (Objects)/salvage.gd" type="Script" id=1]
+[ext_resource path="res://Mini-Scenes (Objects)/Salvage10.gd" type="Script" id=1]
 [ext_resource path="res://Textures/WoodenCrate.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -8,14 +8,27 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Salvage10" type="KinematicBody2D"]
+[node name="Salvage10" type="RigidBody2D"]
 
-position = Vector2( -0.688309, 31.3237 )
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
-collision/safe_margin = 0.08
+mode = 0
+mass = 10.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
