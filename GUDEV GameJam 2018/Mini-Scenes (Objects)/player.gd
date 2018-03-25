@@ -58,6 +58,7 @@ func _on_Area2D_body_enter(body):
 
 func lose_life():
 	lives -= 1
+	get_tree().get_root().get_node("World/Score/Lifes").decrease_life()
 	if lives <= 0:
 		# Game Over
 		print("game over")
