@@ -7,23 +7,39 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
+[node name="RigidBody2D" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
-collision/safe_margin = 0.08
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = true
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
+position = Vector2( 1.23809, -0.198161 )
+scale = Vector2( 1.56942, 1.17918 )
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-scale = Vector2( 0.0637581, 0.0637581 )
+position = Vector2( 1.1289, -0.411621 )
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
+_sections_unfolded = [ "Transform" ]
 
 
