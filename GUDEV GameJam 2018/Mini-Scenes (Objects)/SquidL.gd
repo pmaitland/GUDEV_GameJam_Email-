@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-var facingRight = true
-
 const ink_scene = preload("res://Mini-Scenes (Objects)/SquidInk.tscn")
 
 var ink = null
@@ -10,6 +8,7 @@ const timeBetweenInks = 300
 var inkCounter = 0
 
 func _ready():
+	$Sprite.flip_h = true
 	set_physics_process(true)
 
 func _physics_process(delta):
@@ -26,12 +25,9 @@ func _physics_process(delta):
 		ink = ink_scene.instance()
 		var squidPos = get_position()
 		
-		if facingRight:
-			squidPos.x -= 220
-		else:
-			squidPos.x -= 360
+		squidPos.x -= 360
 		squidPos.y -= 155
 		
 		ink.set_position(squidPos)
-		ink.setFacingRight(facingRight)
+		ink.setFacingRight(false)
 		get_tree().get_root().add_child(ink)
