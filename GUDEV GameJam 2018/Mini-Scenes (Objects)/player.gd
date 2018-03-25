@@ -12,7 +12,11 @@ var accel = Vector2(0, 20)
 
 var controlsInverted = false
 
+var start_position
+var lives = 3
+
 func _ready():
+	start_position = position
 	set_physics_process(true)
 	
 	
@@ -42,13 +46,19 @@ func _physics_process(delta):
 		if velocity.y < -maxSpeed.y * 1.2:
 			velocity.y = -maxSpeed.y * 1.2
 	
-	if !controlsInverted:
-		velocity.x = get_viewport().get_mouse_position().x - self.position.x
-	else:
-		velocity.x = self.position.x - get_viewport().get_mouse_position().x
+	
+	velocity.x = get_viewport().get_mouse_position().x - self.position.x
+	if controlsInverted:
+		velocity.x *= -1
 		
 	move_and_collide(velocity * delta)
 	
 func _on_Area2D_body_enter(body):
     print(str('Body entered: ', body.get_name()))
-	
+
+func lose_life():
+	lives -= 1
+	if lives <= 0:
+		# Game Over
+		print("game over")
+	position = start_position

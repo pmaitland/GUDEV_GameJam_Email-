@@ -33,7 +33,8 @@ func _physics_process(delta):
 
 		if clawNode.is_a_parent_of(collision_info.collider) or clawNode == collision_info.collider:
 			# Collided with claw
-			pass
+			clawNode.lose_life()
+
 		facingRight = !facingRight
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 	
