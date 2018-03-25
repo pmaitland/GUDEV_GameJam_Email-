@@ -168,6 +168,7 @@ position = Vector2( 640.956, 208.778 )
 scale = Vector2( 1.0028, 0.724752 )
 frames = SubResource( 1 )
 animation = "Sea"
+frame = 1
 playing = true
 
 [node name="OVerlay" type="Sprite" parent="." index="14"]
