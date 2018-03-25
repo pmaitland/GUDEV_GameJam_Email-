@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Textures/Background.tres" type="TileSet" id=1]
 [ext_resource path="res://Mini-Scenes (Objects)/Sky.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Textures/Overlay3.png" type="Texture" id=11]
 [ext_resource path="res://Textures/Overlay1.png" type="Texture" id=12]
 [ext_resource path="res://Mini-Scenes (Objects)/HUD/Score.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Mini-Scenes (Objects)/HUD/Time.tscn" type="PackedScene" id=14]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -131,6 +132,8 @@ editor/display_folded = true
 [node name="Shark" parent="All the sharks" index="0" instance=ExtResource( 7 )]
 
 position = Vector2( 218.461, 379.714 )
+SPEED = 8
+max_bob = 2
 
 [node name="All the squid (left)" type="Node2D" parent="." index="8"]
 
@@ -168,7 +171,6 @@ position = Vector2( 640.956, 208.778 )
 scale = Vector2( 1.0028, 0.724752 )
 frames = SubResource( 1 )
 animation = "Sea"
-frame = 1
 playing = true
 
 [node name="OVerlay" type="Sprite" parent="." index="14"]
@@ -178,5 +180,7 @@ scale = Vector2( 1.00724, 4.89212 )
 texture = ExtResource( 12 )
 
 [node name="Score" parent="." index="15" instance=ExtResource( 13 )]
+
+[node name="Time" parent="." index="16" instance=ExtResource( 14 )]
 
 
