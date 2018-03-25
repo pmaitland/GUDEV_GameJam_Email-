@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/greatwhiteshark.png-c74b2d252552e6d46a3885f5dc0a07ce.stex"
+path="res://.import/greatwhiteshark2.png-9c6ef20b2c1a49aa97c357e0ce781d89.stex"
 
 [deps]
 
-source_file="res://Textures/greatwhiteshark.png"
+source_file="res://Textures/greatwhiteshark2.png"
 source_md5="fd102f47b7ee64099e210529b45034f7"
 
-dest_files=[ "res://.import/greatwhiteshark.png-c74b2d252552e6d46a3885f5dc0a07ce.stex" ]
+dest_files=[ "res://.import/greatwhiteshark2.png-9c6ef20b2c1a49aa97c357e0ce781d89.stex" ]
 dest_md5="121bad5e1c5730e491c407fc3b786d9b"
 
 [params]

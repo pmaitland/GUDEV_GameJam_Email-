@@ -1,8 +1,9 @@
 extends KinematicBody2D
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+onready var s_music = get_node("SHallow music")
+onready var d_music = get_node("Deep music")
+
+onready var s_playing = false
 
 var velocity = Vector2()
 
@@ -12,17 +13,26 @@ var accel = Vector2(0, 20)
 var controlsInverted = false
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
 	set_physics_process(true)
-
+	
+	
 func _physics_process(delta):
-	# Called every frame. Delta is time since last frame.
-	# Update game logic here.
 	
+	#music
 	
+	if get_position().y <= 1980 and s_playing == false:
+		s_music.play()
+		s_playing = true
+		d_music.stop()
+
 	
+	if get_position().y >= 2100 and s_playing == true:
+		s_music.stop()
+		s_playing = false
+		d_music.play()
+		
 	
+	#Claw movement
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		velocity.y += accel.y
 		if velocity.y > maxSpeed.y:
