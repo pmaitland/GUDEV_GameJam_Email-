@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Background1.png-9336d910f98ad3846234c77b68d5baff.stex"
+path="res://.import/pearl.png-df58b347deb5be8eb746661be691adc5.stex"
 
 [deps]
 
-source_file="res://Textures/Background/Background1.png"
-source_md5="3b45be9587e785d40e71a66ba15c6092"
+source_file="res://Textures/pearl.png"
+source_md5="6defa90f28d53c78723a0c25b6278ac6"
 
-dest_files=[ "res://.import/Background1.png-9336d910f98ad3846234c77b68d5baff.stex" ]
-dest_md5="0b996aac978016511d98c88607033784"
+dest_files=[ "res://.import/pearl.png-df58b347deb5be8eb746661be691adc5.stex" ]
+dest_md5="a323921ed9c1168ee73c1c75f846d293"
 
 [params]
 
