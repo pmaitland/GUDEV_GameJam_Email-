@@ -4,6 +4,8 @@ extends RigidBody2D
 # var a = 2
 # var b = "textvar"
 
+export var value = int()
+
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
@@ -11,3 +13,7 @@ func _ready():
 
 func _physics_process(delta):
 	pass
+	
+# to increase score
+# get_tree().get_root().get_node("World/CanvasLayer/ScoreText").increase_score(value)
+
