@@ -8,18 +8,14 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-<<<<<<< HEAD:GUDEV GameJam 2018/Mini-Scenes (Objects)/Salvage10.tscn
-[node name="Salvage10" type="RigidBody2D" index="0"]
-=======
 [node name="10Salvage" type="RigidBody2D" index="0"]
->>>>>>> 2789dec7e79b96ecf64c4dfabefc12f5e4c2093e:GUDEV GameJam 2018/Mini-Scenes (Objects)/10Salvage.tscn
 
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 100.0
+mass = 10.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 0.0
@@ -35,15 +31,7 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
-<<<<<<< HEAD:GUDEV GameJam 2018/Mini-Scenes (Objects)/Salvage10.tscn
 value = 10
-=======
-<<<<<<< HEAD:GUDEV GameJam 2018/Mini-Scenes (Objects)/10Salvage.tscn
-value = 10
-=======
-value = 0
->>>>>>> a005e13199da0e41725a03e4992dce27033f4efa:GUDEV GameJam 2018/Mini-Scenes (Objects)/Salvage10.tscn
->>>>>>> 2789dec7e79b96ecf64c4dfabefc12f5e4c2093e:GUDEV GameJam 2018/Mini-Scenes (Objects)/10Salvage.tscn
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
