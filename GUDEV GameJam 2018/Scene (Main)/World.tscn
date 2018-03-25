@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Textures/Background.tres" type="TileSet" id=1]
 [ext_resource path="res://Mini-Scenes (Objects)/Sky.tscn" type="PackedScene" id=2]
@@ -11,19 +11,20 @@
 [ext_resource path="res://Mini-Scenes (Objects)/50Salvage.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Mini-Scenes (Objects)/75Salvage.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Mini-Scenes (Objects)/100Salvage.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Mini-Scenes (Objects)/Shark.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Mini-Scenes (Objects)/Seaweed.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Textures/Overlay2.png" type="Texture" id=15]
-[ext_resource path="res://Textures/Overlay3.png" type="Texture" id=16]
-[ext_resource path="res://Textures/Overlay1.png" type="Texture" id=17]
-[ext_resource path="res://Mini-Scenes (Objects)/HUD/Score.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Mini-Scenes (Objects)/HUD/Time.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Mini-Scenes (Objects)/Mine.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Mini-Scenes (Objects)/Shark.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Mini-Scenes (Objects)/Squid.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Mini-Scenes (Objects)/Seaweed.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Textures/Overlay2.png" type="Texture" id=16]
+[ext_resource path="res://Textures/Overlay3.png" type="Texture" id=17]
+[ext_resource path="res://Textures/Overlay1.png" type="Texture" id=18]
+[ext_resource path="res://Mini-Scenes (Objects)/HUD/Score.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Mini-Scenes (Objects)/HUD/Time.tscn" type="PackedScene" id=20]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 15 ), ExtResource( 16 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "Sea",
 "speed": 3.0
@@ -232,97 +233,130 @@ position = Vector2( 743.735, 3624.51 )
 
 [node name="Salvage 100" type="Node2D" parent="." index="11"]
 
+editor/display_folded = true
+
 [node name="RigidBody2D" parent="Salvage 100" index="0" instance=ExtResource( 11 )]
 
 position = Vector2( 563.655, 3678.09 )
 
-[node name="All the sharks" type="Node2D" parent="." index="12"]
+[node name="Mines" type="Node2D" parent="." index="12"]
 
 editor/display_folded = true
 
-[node name="Shark" parent="All the sharks" index="0" instance=ExtResource( 12 )]
+[node name="KinematicBody2D" parent="Mines" index="0" instance=ExtResource( 12 )]
+
+position = Vector2( -15.4868, 562.694 )
+
+[node name="KinematicBody2D2" parent="Mines" index="1" instance=ExtResource( 12 )]
+
+position = Vector2( 474.934, 1569.35 )
+
+[node name="KinematicBody2D3" parent="Mines" index="2" instance=ExtResource( 12 )]
+
+position = Vector2( 634.966, 3185.16 )
+
+[node name="KinematicBody2D4" parent="Mines" index="3" instance=ExtResource( 12 )]
+
+position = Vector2( -129.058, 3303.89 )
+
+[node name="KinematicBody2D5" parent="Mines" index="4" instance=ExtResource( 12 )]
+
+position = Vector2( 103.247, 3474.25 )
+
+[node name="KinematicBody2D6" parent="Mines" index="5" instance=ExtResource( 12 )]
+
+position = Vector2( 578.18, 3531.03 )
+
+[node name="KinematicBody2D7" parent="Mines" index="6" instance=ExtResource( 12 )]
+
+position = Vector2( 139.383, 2880.58 )
+
+[node name="All the sharks" type="Node2D" parent="." index="13"]
+
+editor/display_folded = true
+
+[node name="Shark" parent="All the sharks" index="0" instance=ExtResource( 13 )]
 
 position = Vector2( 218.461, 379.714 )
 SPEED = 8
 max_bob = 2
 
-[node name="Shark2" parent="All the sharks" index="1" instance=ExtResource( 12 )]
+[node name="Shark2" parent="All the sharks" index="1" instance=ExtResource( 13 )]
 
 position = Vector2( 588.622, 1502.87 )
 SPEED = 8
 max_bob = 2
 
-[node name="Shark3" parent="All the sharks" index="2" instance=ExtResource( 12 )]
+[node name="Shark3" parent="All the sharks" index="2" instance=ExtResource( 13 )]
 
 position = Vector2( 291.316, 2698.23 )
 SPEED = 8
 max_bob = 2
 
-[node name="Shark4" parent="All the sharks" index="3" instance=ExtResource( 12 )]
+[node name="Shark4" parent="All the sharks" index="3" instance=ExtResource( 13 )]
 
 position = Vector2( -122.861, 2120.23 )
 SPEED = 8
 max_bob = 2
 
-[node name="Shark5" parent="All the sharks" index="4" instance=ExtResource( 12 )]
+[node name="Shark5" parent="All the sharks" index="4" instance=ExtResource( 13 )]
 
 position = Vector2( -167.852, 3176.37 )
 SPEED = 8
 max_bob = 2
 
-[node name="Shark6" parent="All the sharks" index="5" instance=ExtResource( 12 )]
+[node name="Shark6" parent="All the sharks" index="5" instance=ExtResource( 13 )]
 
 position = Vector2( -184.032, 1101.06 )
 SPEED = 8
 max_bob = 2
 
-[node name="All the squid (left)" type="Node2D" parent="." index="13"]
+[node name="All the squid (left)" type="Node2D" parent="." index="14"]
 
-[node name="All the sqid (right)" type="Node2D" parent="." index="14"]
+[node name="All the sqid (right)" type="Node2D" parent="." index="15"]
 
-[node name="Squid" parent="." index="15" instance=ExtResource( 13 )]
+[node name="Squid" parent="." index="16" instance=ExtResource( 14 )]
 
 position = Vector2( 256, 320 )
 
-[node name="All Salvage 10" type="Node2D" parent="." index="16"]
+[node name="All Salvage 10" type="Node2D" parent="." index="17"]
 
-[node name="All the weed" type="Node2D" parent="." index="17"]
+[node name="All the weed" type="Node2D" parent="." index="18"]
 
 editor/display_folded = true
 
-[node name="Seaweed" parent="All the weed" index="0" instance=ExtResource( 14 )]
+[node name="Seaweed" parent="All the weed" index="0" instance=ExtResource( 15 )]
 
 position = Vector2( 39.0591, 114.643 )
 
-[node name="Seaweed3" parent="All the weed" index="1" instance=ExtResource( 14 )]
+[node name="Seaweed3" parent="All the weed" index="1" instance=ExtResource( 15 )]
 
 position = Vector2( 1159.06, 114.643 )
 
-[node name="Seaweed2" parent="All the weed" index="2" instance=ExtResource( 14 )]
+[node name="Seaweed2" parent="All the weed" index="2" instance=ExtResource( 15 )]
 
 position = Vector2( 127.059, 114.643 )
 
-[node name="Seaweed4" parent="All the weed" index="3" instance=ExtResource( 14 )]
+[node name="Seaweed4" parent="All the weed" index="3" instance=ExtResource( 15 )]
 
 position = Vector2( 1247.06, 114.643 )
 
-[node name="ANimated overlay" type="AnimatedSprite" parent="." index="18"]
+[node name="ANimated overlay" type="AnimatedSprite" parent="." index="19"]
 
 position = Vector2( 640.956, 208.778 )
 scale = Vector2( 1.0028, 0.724752 )
 frames = SubResource( 1 )
 animation = "Sea"
-frame = 1
 playing = true
 
-[node name="OVerlay" type="Sprite" parent="." index="19"]
+[node name="OVerlay" type="Sprite" parent="." index="20"]
 
 position = Vector2( 642.88, 2230.82 )
 scale = Vector2( 1.00724, 4.89212 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 
-[node name="Score" parent="." index="20" instance=ExtResource( 18 )]
+[node name="Score" parent="." index="21" instance=ExtResource( 19 )]
 
-[node name="Time" parent="." index="21" instance=ExtResource( 19 )]
+[node name="Time" parent="." index="22" instance=ExtResource( 20 )]
 
 
