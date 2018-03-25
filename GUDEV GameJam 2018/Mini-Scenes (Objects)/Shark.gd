@@ -19,7 +19,7 @@ func _ready():
 	random = randi()%2
 	if random == 0:
 		facingRight = true
-		$Sprite.flip_h = true
+		$AnimatedSprite.flip_h = true
 	else:
 		facingRight = false
 	set_physics_process(true)
@@ -33,7 +33,6 @@ func _physics_process(delta):
 
 		if clawNode.is_a_parent_of(collision_info.collider) or clawNode == collision_info.collider:
 			# Collided with claw
-			print("hit claw")
 			pass
 		facingRight = !facingRight
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
