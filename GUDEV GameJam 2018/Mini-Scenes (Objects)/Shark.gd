@@ -20,7 +20,7 @@ func _physics_process(delta):
 	var collision_info = move_and_collide(velocity * delta)
 	if collision_info:
 		facingRight = !facingRight
-		$Sprite.flip_h = !$Sprite.flip_h
+		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 	
 	# set velocity to move in correct direction
 	if facingRight:

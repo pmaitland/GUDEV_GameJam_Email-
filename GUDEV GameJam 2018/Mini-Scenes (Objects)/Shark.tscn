@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/Shark.gd" type="Script" id=1]
-[ext_resource path="res://Textures/greatwhiteshark.png" type="Texture" id=2]
+[ext_resource path="res://Textures/greatwhiteshark1.png" type="Texture" id=2]
+[ext_resource path="res://Textures/greatwhiteshark2.png" type="Texture" id=3]
+[ext_resource path="res://Textures/greatwhiteshark3.png" type="Texture" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -9,7 +11,17 @@ custom_solver_bias = 0.0
 radius = 49.5694
 height = 132.16
 
-[node name="Shark" type="KinematicBody2D"]
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "shark",
+"speed": 7.0
+} ]
+_sections_unfolded = [ "Resource" ]
+
+[node name="Shark" type="KinematicBody2D" index="0"]
 
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
@@ -27,11 +39,13 @@ scale = Vector2( 1.28334, 1.43104 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
 
-position = Vector2( 892.934, 329.827 )
-scale = Vector2( 2.17292, 2.4972 )
-texture = ExtResource( 2 )
-_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+position = Vector2( 902.048, 326.35 )
+scale = Vector2( 2.49306, 2.49306 )
+frames = SubResource( 2 )
+animation = "shark"
+frame = 3
+playing = true
 
 
