@@ -1,24 +1,24 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Mini-Scenes (Objects)/Salvage10.gd" type="Script" id=1]
-[ext_resource path="res://Textures/WoodenCrate.png" type="Texture" id=2]
+[ext_resource path="res://Textures/IronCrate.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 20, 20 )
 
-[node name="Salvage10" type="RigidBody2D"]
+[node name="20Salvage" type="RigidBody2D"]
 
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( 13.5029, 21.7722 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 10.0
+mass = 100.0
 friction = 1.0
 bounce = 0.0
-gravity_scale = 1.0
+gravity_scale = 0.0
 custom_integrator = false
 continuous_cd = 0
 contacts_reported = 0
@@ -30,22 +30,17 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Angular", "Pause", "Transform" ]
+value = 20
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
-position = Vector2( 53.6141, 50.9533 )
-scale = Vector2( 2.0663, 1.97276 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 53.2636, 50.751 )
-scale = Vector2( 0.0980476, 0.091845 )
+position = Vector2( -0.0437946, -0.108309 )
+scale = Vector2( 0.0976085, 0.0976085 )
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Transform" ]
-__meta__ = {
-"_edit_group_": true
-}
 
 

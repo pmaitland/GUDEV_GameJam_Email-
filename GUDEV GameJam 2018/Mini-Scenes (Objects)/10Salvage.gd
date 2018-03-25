@@ -13,7 +13,7 @@ func _ready():
 
 func _physics_process(delta):
 	pass
-	
+
 # to increase score
 # get_tree().get_root().get_node("World/CanvasLayer/ScoreText").increase_score(value)
 
