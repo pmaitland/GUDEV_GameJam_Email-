@@ -74,63 +74,64 @@ editor/display_folded = true
 
 [node name="Wall" parent="All the walls (Left)" index="0" instance=ExtResource( 8 )]
 
-position = Vector2( 0, 192 )
+position = Vector2( -9.8219, 189.545 )
 
 [node name="Wall2" parent="All the walls (Left)" index="1" instance=ExtResource( 8 )]
 
-position = Vector2( 0, 896 )
+position = Vector2( -9.8219, 893.545 )
 
 [node name="Wall3" parent="All the walls (Left)" index="2" instance=ExtResource( 8 )]
 
-position = Vector2( 0, 1600 )
+position = Vector2( -9.8219, 1597.54 )
 
 [node name="Wall4" parent="All the walls (Left)" index="3" instance=ExtResource( 8 )]
 
-position = Vector2( 0, 2304 )
+position = Vector2( -9.8219, 2301.54 )
 
 [node name="Wall5" parent="All the walls (Left)" index="4" instance=ExtResource( 8 )]
 
-position = Vector2( 0, 3008 )
+position = Vector2( -9.8219, 3005.54 )
 
 [node name="All the Walls (Right)" type="Node2D" parent="." index="8"]
 
 editor/display_folded = true
+position = Vector2( 8.28686, 3.82525 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Wall" parent="All the Walls (Right)" index="0" instance=ExtResource( 8 )]
 
-position = Vector2( 1282.19, 915.531 )
+position = Vector2( 1279.75, 910.67 )
 rotation = 3.14159
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall2" parent="All the Walls (Right)" index="1" instance=ExtResource( 8 )]
 
-position = Vector2( 1281.59, 1627 )
+position = Vector2( 1279.15, 1622.14 )
 rotation = 3.14159
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall3" parent="All the Walls (Right)" index="2" instance=ExtResource( 8 )]
 
-position = Vector2( 1280.99, 2342.43 )
+position = Vector2( 1278.55, 2337.57 )
 rotation = 3.14159
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall4" parent="All the Walls (Right)" index="3" instance=ExtResource( 8 )]
 
-position = Vector2( 1281.4, 3055.6 )
+position = Vector2( 1278.96, 3050.74 )
 rotation = 3.14159
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Wall5" parent="All the Walls (Right)" index="4" instance=ExtResource( 8 )]
 
-position = Vector2( 1281.45, 3771.99 )
+position = Vector2( 1279.01, 3767.13 )
 rotation = 3.14159
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="9"]
 
-position = Vector2( 643.163, 208.778 )
-scale = Vector2( 1, 0.724752 )
+position = Vector2( 640.956, 208.778 )
+scale = Vector2( 1.0028, 0.724752 )
 frames = SubResource( 1 )
 animation = "Sea"
 frame = 1
@@ -138,8 +139,8 @@ playing = true
 
 [node name="Sprite" type="Sprite" parent="." index="10"]
 
-position = Vector2( 638.243, 2205.87 )
-scale = Vector2( 1, 4.8228 )
+position = Vector2( 642.88, 2205.87 )
+scale = Vector2( 1.00724, 4.8228 )
 texture = ExtResource( 11 )
 
 
