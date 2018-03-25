@@ -1,12 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Textures/MenuButtonPlay.png" type="Texture" id=1]
 [ext_resource path="res://Textures/MenuButtonPressedPlay.png" type="Texture" id=2]
 [ext_resource path="res://TextureButton.gd" type="Script" id=3]
-[ext_resource path="res://Textures/MenuButtonCredit.png" type="Texture" id=4]
-[ext_resource path="res://Textures/MenuButtonPressedCredit.png" type="Texture" id=5]
+[ext_resource path="res://Textures/title.png" type="Texture" id=4]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -55,31 +54,10 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="CreditsButton" type="TextureButton" parent="." index="1"]
+[node name="Sprite" type="Sprite" parent="." index="1"]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 423.0
-margin_top = 529.0
-margin_right = 864.0
-margin_bottom = 649.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-expand = true
-_sections_unfolded = [ "Textures" ]
+position = Vector2( 637.695, 357.89 )
+texture = ExtResource( 4 )
 
 [connection signal="timeout" from="PlayButton/TransitionDelay" to="PlayButton" method="_on_TransitionDelay_timeout"]
 
