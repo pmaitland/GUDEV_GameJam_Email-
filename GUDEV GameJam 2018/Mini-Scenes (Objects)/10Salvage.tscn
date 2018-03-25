@@ -15,7 +15,7 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 10.0
+mass = 100.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 0.0
@@ -31,7 +31,11 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
+<<<<<<< HEAD:GUDEV GameJam 2018/Mini-Scenes (Objects)/10Salvage.tscn
 value = 10
+=======
+value = 0
+>>>>>>> a005e13199da0e41725a03e4992dce27033f4efa:GUDEV GameJam 2018/Mini-Scenes (Objects)/Salvage10.tscn
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
